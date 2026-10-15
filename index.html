@@ -1,36 +1,182 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="id">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>CMS TelukAru.id - Tulis Berita</title>
-  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
-  <style>
-    body{font-family:system-ui;background:#f8fafc;display:flex;align-items:center;justify-content:center;height:100vh;margin:0}
-    .box{background:#fff;padding:32px;border-radius:16px;box-shadow:0 10px 30px rgba(0,0,0,.08);text-align:center;max-width:360px}
-    .logo{font-weight:700;font-size:22px;color:#0F3B82;margin-bottom:12px}
-    .btn{background:#0F3B82;color:#fff;padding:12px 24px;border-radius:999px;border:none;cursor:pointer;font-weight:600;width:100%;margin-top:16px}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=5">
+<title>TelukAru.id - Portal Berita, Wisata & Sejarah Teluk Aru Terlengkap</title>
+<meta name="description" content="Portal resmi Teluk Aru, Langkat - Berita terkini, wisata Pulau Sembilan, hutan mangrove, sejarah Kerajaan Aru abad 13, budaya Melayu pesisir.">
+<meta name="keywords" content="Teluk Aru, Berita Teluk Aru, Wisata Teluk Aru, Sejarah Kerajaan Aru, Langkat, Pangkalan Brandan">
+<meta name="robots" content="index,follow,max-image-preview:large">
+<meta name="author" content="TelukAru.id">
+<link rel="canonical" href="https://telukaru.id/">
+<!-- FAVICON LENGKAP - TELUKARU.ID -->
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16.png">
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="manifest" href="/manifest.json">
+<meta property="og:image" content="/logo-telukaru-id.png">
+<meta name="theme-color" content="#0e7490">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://telukaru.id/">
+<meta property="og:image" content="/logo-telukaru-id.png">
+<meta name="theme-color" content="#0e7490">
+<link rel="manifest" href="/manifest.json">
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Inter:wght@400;500;700;900&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"NewsMediaOrganization","name":"TelukAru.id","url":"https://telukaru.id","logo":{"@type":"ImageObject","url":"https://telukaru.id/logo-telukaru-id.png"}}</script>
+<style>body{font-family:'Inter',sans-serif}h1,h2,h3{font-family:'Merriweather',serif}:root{--ticker-bg:#dc2626;--ticker-text:#fff;--ticker-speed:90s}.ticker{display:flex;align-items:center;overflow:hidden;background:var(--ticker-bg);color:var(--ticker-text);font-size:13px;font-weight:700}.ticker-label{background:#fff;color:var(--ticker-bg);padding:3px 12px;border-radius:4px;margin:0 12px;font-weight:900;white-space:nowrap;animation:pulse 1s infinite}.ticker-wrap{flex:1;overflow:hidden;white-space:nowrap}.ticker-move{display:inline-block;white-space:nowrap;animation:ticker var(--ticker-speed) linear infinite}@keyframes ticker{0%{transform:translateX(30%)}100%{transform:translateX(-100%)}}@keyframes pulse{0%,100%{opacity:1}50%{opacity:0.7}}.line-clamp-2{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}</style>
 </head>
-<body>
-  <div class="box">
-    <div class="logo">TelukAru.id CMS</div>
-    <p style="color:#64748b;font-size:14px">Login dulu Prof untuk nulis berita original</p>
-    <button class="btn" onclick="netlifyIdentity.open()">🔐 Login Admin</button>
-    <p style="font-size:12px;color:#94a3b8;margin-top:16px">admin@telukaru.id / WA: 087794536555</p>
+<body class="bg-[#f6f7f8] text-gray-900">
+
+<div class="bg-[#0e7490] text-white text-[11px] py-1.5 hidden md:block">
+  <div class="max-w-[1280px] mx-auto px-4 flex justify-between"><span>📍 Pangkalan Brandan, Langkat - SUMUT | Rabu, 14 Mei 2026 • 11:42 WIB</span><span class="flex gap-4"><a href="/tentang.html">Tentang</a><a href="/kontak.html">Kontak</a><a href="/redaksi.html">Redaksi</a></span></div>
+</div>
+
+<header class="bg-white shadow-[0_2px_10px_rgba(0,0,0,0.07)] sticky top-0 z-[100]">
+  <div class="max-w-[1280px] mx-auto px-4">
+    <div class="flex items-center justify-between h-[60px] md:h-[72px]">
+      <!-- LOGO BARU - TELUKARU.ID MEDIA GROUP -->
+      <a href="/" class="flex items-center">
+        <img src="/logo-telukaru-id.png" alt="TelukAru.id - Jaringan Media Teluk Aru" class="h-[44px] md:h-[52px] w-auto object-contain">
+      </a>
+      <nav class="hidden lg:flex items-center gap-6 text-[13px] font-bold">
+        <a href="/" class="text-[#0e7490] border-b-2 border-[#0e7490] pb-1">BERANDA</a>
+        <a href="#berita" class="hover:text-[#0e7490]">BERITA</a>
+        <a href="#wisata" class="hover:text-[#0e7490]">WISATA</a>
+        <a href="#sejarah" class="hover:text-[#0e7490]">SEJARAH</a>
+        <a href="#budaya" class="hover:text-[#0e7490]">BUDAYA</a>
+      </nav>
+      <div class="flex items-center gap-2 lg:hidden">
+        <button id="menuBtn" class="bg-[#0e7490] text-white w-10 h-10 rounded-full text-[20px]">☰</button>
+      </div>
+    </div>
+  </div>
+  <div class="border-t bg-white overflow-x-auto scrollbar-hide">
+    <div class="max-w-[1280px] mx-auto px-2 flex gap-1 text-[12px] font-bold whitespace-nowrap py-2">
+      <a href="/" class="bg-[#0e7490] text-white px-4 py-1.5 rounded-full">BERANDA</a>
+      <a href="#berita" class="bg-gray-100 px-4 py-1.5 rounded-full">BERITA TERKINI</a>
+      <a href="#wisata" class="bg-gray-100 px-4 py-1.5 rounded-full">WISATA</a>
+      <a href="#sejarah" class="bg-gray-100 px-4 py-1.5 rounded-full">SEJARAH ARU</a>
+      <a href="#budaya" class="bg-gray-100 px-4 py-1.5 rounded-full">BUDAYA</a>
+      <a href="/tentang.html" class="bg-gray-100 px-4 py-1.5 rounded-full">TENTANG</a>
+    </div>
+  </div>
+  <div id="mobileNav" class="hidden bg-white border-t px-4 py-5 space-y-4 text-sm font-bold absolute w-full shadow-xl">
+    <a href="#berita" class="flex justify-between">BERITA <span>→</span></a><a href="#wisata" class="flex justify-between">WISATA <span>→</span></a><a href="#sejarah" class="flex justify-between">SEJARAH KERAJAAN ARU <span>→</span></a>
+    <hr><a href="/tentang.html">Tentang Kami</a><a href="/kebijakan-privasi.html">Kebijakan Privasi</a><a href="/kontak.html">Kontak</a>
+  </div>
+</header>
+
+<div id="tickerBar" class="ticker">
+  <div class="ticker-label">BREAKING</div>
+  <div class="ticker-wrap"><div id="tickerText" class="ticker-move"></div></div>
+</div>
+<script>
+const TICKER_CONFIG = {
+  speed: 90,
+  bgColor: "#dc2626",
+  textColor: "#ffffff",
+  text: "⚓ BREAKING: Portal TelukAru.id Resmi Diluncurkan • 🌴 Potensi Wisata Pulau Kampai Dilirik Investor Ekowisata • 📜 Sejarah Kerajaan Aru Masuk Muatan Lokal Sekolah di Langkat • 🐟 Panen Tenggiri Nelayan Teluk Aru Melimpah Ruah • 🏝️ Festival Sasi Laut Teluk Aru 2026 Siap Digelar November • "
+};
+document.documentElement.style.setProperty('--ticker-bg', TICKER_CONFIG.bgColor);
+document.documentElement.style.setProperty('--ticker-text', TICKER_CONFIG.textColor);
+document.documentElement.style.setProperty('--ticker-speed', TICKER_CONFIG.speed + 's');
+document.getElementById('tickerText').innerText = TICKER_CONFIG.text;
+</script>
+
+<div class="max-w-[1280px] mx-auto px-4 mt-4"><div class="bg-white border border-dashed border-gray-300 h-[90px] flex flex-col items-center justify-center text-[11px] text-gray-400 rounded-xl"><span class="font-bold">SLOT ADSENSE ATAS 728x90</span><span>id="ads-top" - Ganti dengan kode AdSense setelah ACC</span></div></div>
+
+<main class="max-w-[1280px] mx-auto px-4 mt-5 grid lg:grid-cols-12 gap-5">
+  <div class="lg:col-span-8">
+    <section class="bg-white rounded-[16px] overflow-hidden shadow-sm border">
+      <a href="/artikel.html" class="block relative">
+        <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1200" alt="Teluk Aru" class="w-full h-[320px] md:h-[460px] object-cover">
+        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4 md:p-6">
+          <span class="bg-[#dc2626] text-white text-[11px] font-black px-2.5 py-1 rounded">BERITA UTAMA</span>
+          <h1 class="text-white text-[22px] md:text-[34px] font-black leading-[1.15] mt-2">Mengenal Kembali Kejayaan Kerajaan Aru: Kekuatan Maritim Terlupakan di Selat Malaka</h1>
+        </div>
+      </a>
+      <div class="p-4 md:p-5">
+        <p class="text-gray-600 text-[14px] leading-relaxed">Kerajaan Aru atau Haru adalah kerajaan Melayu kuno yang berpusat di Teluk Aru, Langkat. Pada abad ke-13, kerajaan ini menguasai jalur perdagangan rempah, kapur barus, dan emas. Naskah kuno Tiongkok menyebutnya sebagai negeri yang kaya dan kuat...</p>
+        <div class="flex items-center gap-3 mt-4 text-[12px] text-gray-500 border-t pt-3">
+          <span class="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center font-bold">BR</span>
+          <div><div class="font-bold text-gray-800">Bayu Ramadhan</div><div>Editor TelukAru.id • 14 Mei 2026 • 5 menit baca • 1.2rb views</div></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="flex items-center justify-between mt-8 mb-3">
+      <h2 id="berita" class="font-black text-[20px] border-l-[5px] border-[#0e7490] pl-3">BERITA TERKINI</h2>
+      <a href="#" class="text-[12px] font-bold text-[#0e7490]">LIHAT SEMUA →</a>
+    </div>
+    <div class="grid md:grid-cols-2 gap-4">
+      <article class="bg-white rounded-[14px] overflow-hidden shadow-sm border hover:shadow-md transition"><a href="/artikel.html"><img src="https://images.unsplash.com/photo-1530549387789-4c1017266635?w=600" class="h-[200px] w-full object-cover"><div class="p-4"><span class="text-[10px] font-black text-[#0e7490] tracking-widest">WISATA</span><h3 class="font-bold text-[16px] leading-tight mt-1 line-clamp-2">Potensi Wisata Mangrove Teluk Aru Menarik Minat Investor Ekowisata Nasional</h3><div class="text-[11px] text-gray-500 mt-2">Redaksi • 2 jam lalu</div></div></a></article>
+      <article class="bg-white rounded-[14px] overflow-hidden shadow-sm border"><a href="/artikel.html"><img src="https://images.unsplash.com/photo-1519046904884-53103b34f59d?w=600" class="h-[200px] w-full object-cover"><div class="p-4"><span class="text-[10px] font-black text-[#dc2626]">BERITA</span><h3 class="font-bold text-[16px] leading-tight mt-1">Nelayan Teluk Aru Panen Tenggiri, Harga di Pangkalan Brandan Stabil</h3><div class="text-[11px] text-gray-500 mt-2">Tim Liputan • 5 jam lalu</div></div></a></article>
+      <article class="bg-white rounded-[14px] overflow-hidden shadow-sm border"><a href="/artikel.html"><img src="https://images.unsplash.com/photo-1461360228755-6e81c478b882?w=600" class="h-[200px] w-full object-cover"><div class="p-4"><span class="text-[10px] font-black text-amber-600">SEJARAH</span><h3 class="font-bold text-[16px] leading-tight mt-1">Naskah Kuno Sebut Aru sebagai Negeri Emas di Pesisir Timur Sumatera</h3><div class="text-[11px] text-gray-500 mt-2">Sejarah • 1 hari lalu</div></div></a></article>
+      <article class="bg-white rounded-[14px] overflow-hidden shadow-sm border"><a href="/artikel.html"><img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600" class="h-[200px] w-full object-cover"><div class="p-4"><span class="text-[10px] font-black text-emerald-600">BUDAYA</span><h3 class="font-bold text-[16px] leading-tight mt-1">Tradisi Menjala Ikan Masih Dilestarikan Warga Teluk Aru</h3><div class="text-[11px] text-gray-500 mt-2">Budaya • 1 hari lalu</div></div></a></article>
+    </div>
+
+    <div class="flex justify-center items-center gap-2 mt-8 bg-white py-4 rounded-xl border text-[13px] font-bold">
+      <a href="#" class="px-3 py-1.5 border rounded hover:bg-gray-50">&lt; Prev</a>
+      <a href="#" class="bg-[#0e7490] text-white w-8 h-8 flex items-center justify-center rounded">1</a>
+      <a href="#" class="w-8 h-8 flex items-center justify-center rounded border hover:bg-gray-50">2</a>
+      <a href="#" class="w-8 h-8 flex items-center justify-center rounded border hover:bg-gray-50">3</a>
+      <span>...</span>
+      <a href="#" class="w-8 h-8 flex items-center justify-center rounded border hover:bg-gray-50">10</a>
+      <a href="#" class="px-3 py-1.5 border rounded hover:bg-gray-50">Next &gt;</a>
+    </div>
+
+    <div class="bg-white border-dashed border-2 border-gray-300 h-[120px] rounded-xl mt-6 flex items-center justify-center text-xs text-gray-400">SLOT ADSENSE TENGAH ARTIKEL</div>
+
+    <h2 id="wisata" class="font-black text-[20px] border-l-[5px] border-emerald-600 pl-3 mt-8 mb-3">DESTINASI WISATA</h2>
+    <div class="bg-white rounded-[14px] p-5 border grid md:grid-cols-3 gap-4 text-center">
+      <div><div class="bg-emerald-50 w-20 h-20 rounded-full mx-auto flex items-center justify-center text-3xl">🏝️</div><b class="block mt-2">Pulau Sembilan</b><span class="text-xs text-gray-500">Gugusan pulau perawan</span></div>
+      <div><div class="bg-cyan-50 w-20 h-20 rounded-full mx-auto flex items-center justify-center text-3xl">🌳</div><b class="block mt-2">Mangrove</b><span class="text-xs text-gray-500">Ekowisata edukasi</span></div>
+      <div><div class="bg-amber-50 w-20 h-20 rounded-full mx-auto flex items-center justify-center text-3xl">🛶</div><b class="block mt-2">Sungai Aru</b><span class="text-xs text-gray-500">Susur sungai bersejarah</span></div>
+    </div>
+
+    <h2 id="sejarah" class="font-black text-[20px] border-l-[5px] border-amber-600 pl-3 mt-8 mb-3">SEJARAH KERAJAAN ARU</h2>
+    <div class="bg-white rounded-[14px] p-6 border"><p class="text-[14px] leading-relaxed">Kerajaan Aru adalah kerajaan Melayu pesisir yang berpengaruh sejak abad ke-13. Berpusat di Teluk Aru, kerajaan ini menguasai perdagangan Selat Malaka...</p><a href="/sejarah-kerajaan-aru.html" class="inline-block mt-3 bg-amber-600 text-white text-xs font-bold px-4 py-2 rounded-full">Baca Sejarah Lengkap →</a></div>
   </div>
 
-<script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
+  <aside class="lg:col-span-4 space-y-5">
+    <div class="bg-white rounded-[14px] border overflow-hidden">
+      <div class="bg-[#0e7490] text-white font-black text-[13px] px-4 py-3">🔥 BERITA POPULER</div>
+      <div class="p-3 space-y-3">
+        <a href="/artikel.html" class="flex gap-3"><span class="font-black text-[20px] text-[#0e7490]">1</span><div><div class="font-bold text-[13px] leading-tight line-clamp-2">Asal Usul Nama Teluk Aru dalam Cerita Rakyat</div><div class="text-[11px] text-gray-500">SEJARAH • 2,1rb views</div></div></a>
+        <a href="/artikel.html" class="flex gap-3"><span class="font-black text-[20px] text-[#0e7490]">2</span><div><div class="font-bold text-[13px] leading-tight">Kuliner Ikan Asar Bumbu Rempah Legendaris</div><div class="text-[11px] text-gray-500">WISATA • 1,8rb views</div></div></a>
+        <a href="/artikel.html" class="flex gap-3"><span class="font-black text-[20px] text-[#0e7490]">3</span><div><div class="font-bold text-[13px] leading-tight">Jejak Portugis di Teluk Aru yang Terlupakan</div><div class="text-[11px] text-gray-500">SEJARAH • 1,5rb views</div></div></a>
+        <a href="/artikel.html" class="flex gap-3"><span class="font-black text-[20px] text-gray-400">4</span><div><div class="font-bold text-[13px] leading-tight">Spot Sunset Terbaik di Teluk Aru</div><div class="text-[11px] text-gray-500">WISATA • 1,3rb views</div></div></a>
+      </div>
+    </div>
+    <div class="bg-white border-2 border-dashed border-gray-300 h-[300px] rounded-[14px] flex flex-col items-center justify-center text-[11px] text-gray-400"><b>SLOT ADSENSE SIDEBAR 300x250</b><span>id="ads-sidebar"</span><span class="mt-2 text-[10px]">CTR Tertinggi - Wajib pasang</span></div>
+    <div class="bg-white rounded-[14px] border p-4"><h3 class="font-black text-[13px]">📅 AGENDA TELUK ARU</h3><div class="mt-3 space-y-2 text-[12px]"><div class="flex gap-2"><span class="bg-red-100 text-red-600 text-[10px] px-2 py-1 rounded font-bold">NOV</span><span>Festival Sasi Laut 2026</span></div><div class="flex gap-2"><span class="bg-cyan-100 text-cyan-700 text-[10px] px-2 py-1 rounded font-bold">DES</span><span>Lomba Perahu Hias Nelayan</span></div></div></div>
+    <div class="bg-[#0e7490] rounded-[14px] p-5 text-white"><h3 class="font-black text-[14px]">Dapatkan Berita Teluk Aru di WA</h3><p class="text-[12px] opacity-80 mt-1">Gratis, tanpa spam. Info wisata & sejarah langsung ke HP.</p><a href="https://wa.me/6281234567890" class="bg-white text-[#0e7490] text-[12px] font-black px-5 py-2.5 rounded-full inline-block mt-3">Join Channel WA →</a></div>
+  </aside>
+</main>
+
+<footer class="bg-[#111827] text-gray-400 text-[12px] mt-12">
+  <div class="max-w-[1280px] mx-auto px-4 py-10 grid md:grid-cols-4 gap-8">
+    <div><div class="text-white font-black text-[20px]">TELUKARU.ID</div><p class="mt-2 leading-relaxed">Portal independen mengangkat potensi Teluk Aru, Langkat. Berita, Wisata Bahari, Sejarah Kerajaan Aru. Dikelola putra daerah.</p><div class="mt-3 flex gap-2"><span class="bg-white/10 px-3 py-1 rounded-full">📘 Facebook</span><span class="bg-white/10 px-3 py-1 rounded-full">📷 Instagram</span></div></div>
+    <div><div class="text-white font-bold mb-3">KATEGORI</div><div class="space-y-2"><a href="#berita" class="block hover:text-white">Berita Terkini</a><a href="#wisata" class="block hover:text-white">Wisata Teluk Aru</a><a href="#sejarah" class="block hover:text-white">Sejarah Kerajaan Aru</a><a href="#budaya" class="block hover:text-white">Budaya Melayu</a></div></div>
+    <div><div class="text-white font-bold mb-3">HALAMAN LEGAL (7 HALAMAN)</div><div class="space-y-2">
+      <a href="/tentang.html" class="block hover:text-white">1. Tentang Kami</a>
+      <a href="/kontak.html" class="block hover:text-white">2. Kontak</a>
+      <a href="/kebijakan-privasi.html" class="block hover:text-white">3. Kebijakan Privasi</a>
+      <a href="/disclaimer.html" class="block hover:text-white">4. Disclaimer</a>
+      <a href="/pedoman-media-siber.html" class="block hover:text-white">5. Pedoman Media Siber</a>
+      <a href="/hak-cipta.html" class="block hover:text-white">6. Hak Cipta / DMCA</a>
+      <a href="/redaksi.html" class="block hover:text-white">7. Redaksi</a>
+    </div></div>
+    <div><div class="text-white font-bold mb-3">KONTAK REDAKSI</div><p>Email: redaksi@telukaru.id<br>info@telukaru.id<br>WA: 0877-9453-6555<br><br>Alamat: Pelawi Pangkalan Brandan, Langkat, SUMUT 20857</p></div>
+  </div>
+  <div class="border-t border-white/10 py-4 text-center">© 2026 TelukAru.id - All Rights Reserved. Dibuat untuk kemajuan Teluk Aru. | <a href="/sitemap.xml">Sitemap</a> | <a href="/sitemap-news.xml">Google News</a></div>
+</footer>
+
 <script>
-  if (window.netlifyIdentity) {
-    window.netlifyIdentity.on("init", user => {
-      if (!user) {
-        window.netlifyIdentity.on("login", () => {
-          document.location.href = "/admin/";
-        });
-      }
-    });
-  }
+document.getElementById('menuBtn').onclick=()=>document.getElementById('mobileNav').classList.toggle('hidden');
+if('serviceWorker' in navigator){navigator.serviceWorker.register('/sw.js')}
 </script>
 </body>
 </html>
