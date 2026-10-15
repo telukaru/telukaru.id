@@ -6,7 +6,7 @@ media_folder: "images/uploads"
 public_folder: "/images/uploads"
 
 collections:
-    - name: "berita"
+  - name: "berita"
     label: "Berita"
     folder: "_posts"
     create: true
