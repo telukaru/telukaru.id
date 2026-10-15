@@ -7,15 +7,9 @@ public_folder: "/images/uploads"
 
 collections:
     - name: "berita"
-    label: "Tulis Berita Baru"
-    folder: "content/post"
+    label: "Berita"
+    folder: "_posts"
     create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-            - {label: "Judul Berita", name: "title", widget: "string"}
-            - {label: "Tanggal", name: "date", widget: "datetime"}
-            - {label: "Penulis", name: "author", widget: "string", default: "Bayu Ramadhan"}
-            - {label: "Foto Utama", name: "thumbnail", widget: "image"}
-            - {label: "Ringkasan", name: "description", widget: "text"}
-            - {label: "Isi Berita (Original)", name: "body", widget: "markdown", hint: "Wajib original, jangan copas dari situs lain!"}
-            - {label: "Kategori", name: "categories", widget: "list", default: ["Teluk Aru"]}
+            - {label: "Judul", name: "title", widget: "string"}
+            - {label: "Isi", name: "body", widget: "markdown"}
