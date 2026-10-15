@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://telukaru.id/sitemap.xml
+Sitemap: https://telukaru.id/sitemap-news.xml

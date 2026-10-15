@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{title}} - TelukAru.id</title>
+<meta name="description" content="{{description}}">
+<meta property="og:type" content="article">
+<meta property="og:title" content="{{title}} - TelukAru.id">
+<meta property="og:description" content="{{description}}">
+<meta property="og:image" content="{{thumbnail}}">
+<meta property="article:author" content="{{author}}">
+<link rel="canonical" href="https://telukaru.id/{{slug}}">
+<meta name="theme-color" content="#0e7490">
+<script src="https://cdn.tailwindcss.com"></script>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700;900&family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+<style>body{font-family:Inter}h1,h2{font-family:Merriweather}.prose p{margin-bottom:16px;line-height:1.8;font-size:16px}</style>
+</head>
+<body class="bg-[#f6f7f8]">
+
+<header class="bg-white shadow sticky top-0 z-[100]">
+  <div class="max-w-[1280px] mx-auto px-4 h-[60px] flex items-center justify-between">
+    <a href="/" class="flex items-center gap-2.5"><div class="bg-[#0e7490] text-white font-black text-[22px] w-11 h-11 flex items-center justify-center rounded-[12px]">TA</div><div class="leading-none"><div class="font-black text-[18px]">TELUKARU<span class="text-[#0e7490]">.ID</span></div><div class="text-[9px] tracking-[0.18em] font-bold text-gray-500">BERITA • WISATA • SEJARAH</div></div></a>
+    <a href="/" class="bg-gray-100 px-4 py-2 rounded-full text-xs font-bold">← KEMBALI</a>
+  </div>
+  <div class="border-t bg-white overflow-x-auto"><div class="max-w-[1280px] mx-auto px-2 flex gap-1 text-[12px] font-bold whitespace-nowrap py-2"><a href="/" class="bg-[#0e7490] text-white px-4 py-1.5 rounded-full">BERANDA</a><a href="/#berita" class="bg-gray-100 px-4 py-1.5 rounded-full">BERITA</a><a href="/#wisata" class="bg-gray-100 px-4 py-1.5 rounded-full">WISATA</a></div></div>
+</header>
+
+<div class="max-w-[900px] mx-auto px-4 mt-4 text-[12px] text-gray-500"><a href="/" class="hover:text-[#0e7490]">Home</a> / <a href="/#berita">Berita</a> / <span class="text-gray-900">{{title}}</span></div>
+
+<main class="max-w-[900px] mx-auto px-4 mt-4 grid lg:grid-cols-12 gap-6">
+  <article class="lg:col-span-8 bg-white rounded-[16px] border p-5 md:p-8">
+    <span class="bg-[#dc2626] text-white text-[11px] font-black px-3 py-1 rounded">{{categories}}</span>
+    <h1 class="text-[26px] md:text-[36px] font-black leading-[1.2] mt-3">{{title}}</h1>
+
+    <div class="flex items-start gap-3 mt-5 border-y py-4">
+      <div class="w-10 h-10 bg-[#0e7490] text-white rounded-full flex items-center justify-center font-black">BR</div>
+      <div class="text-[12px] leading-tight">
+        <div><b>Penulis:</b> {{author}} | <b>Editor:</b> Tim Redaksi TelukAru.id</div>
+        <div class="text-gray-500 mt-1">📅 {{date}} • ⏱️ 5 menit baca</div>
+        <div class="flex gap-2 mt-2"><a href="https://wa.me/?text=https://telukaru.id/{{slug}}" class="bg-green-500 text-white px-3 py-1 rounded-full text-[11px] font-bold">Share WA</a><a href="https://www.facebook.com/sharer/sharer.php?u=https://telukaru.id/{{slug}}" class="bg-blue-600 text-white px-3 py-1 rounded-full text-[11px] font-bold">Share FB</a></div>
+      </div>
+    </div>
+
+    <figure class="mt-6">
+      <img src="{{thumbnail}}" alt="{{title}}" class="w-full h-[420px] object-cover rounded-[12px]">
+      <figcaption class="text-[12px] text-gray-500 italic mt-2 bg-gray-50 p-2 rounded">📷 {{title}} (Foto: TelukAru.id/{{author}})</figcaption>
+    </figure>
+
+    <div class="prose mt-6">
+      {{body}}
+    </div>
+
+    <div class="bg-gray-100 border-dashed border-2 h-[120px] rounded-xl mt-8 flex items-center justify-center text-xs text-gray-400">SLOT ADSENSE DALAM ARTIKEL (336x280)</div>
+
+    <div class="mt-6 flex gap-2 text-[11px]"><span class="font-bold">TAG:</span><span class="bg-gray-100 px-2 py-1 rounded-full">#TelukAru</span><span class="bg-gray-100 px-2 py-1 rounded-full">#Langkat</span></div>
+
+    <div class="bg-[#f6f7f8] rounded-xl p-4 mt-8 flex gap-3"><div class="w-12 h-12 bg-[#0e7490] text-white rounded-full flex items-center justify-center font-black text-lg">BR</div><div class="text-[12px]"><div class="font-black">{{author}}</div><div class="text-gray-600">Penulis & Founder TelukAru.id, putra daerah Pangkalan Brandan.</div></div></div>
+  </article>
+
+  <aside class="lg:col-span-4 space-y-4">
+    <div class="bg-white rounded-[14px] border p-4"><h3 class="font-black text-[13px]">🔥 BERITA TERKAIT</h3><div class="mt-3 space-y-3 text-[13px]"><a href="#" class="block font-bold hover:text-[#0e7490]">• Sejarah Kerajaan Aru</a><a href="#" class="block font-bold hover:text-[#0e7490]">• Wisata Teluk Aru</a></div></div>
+    <div class="bg-white border-dashed border-2 h-[300px] rounded-xl flex items-center justify-center text-xs text-gray-400">ADSENSE 300x250</div>
+  </aside>
+</main>
+
+<footer class="bg-[#111827] text-gray-400 text-xs py-6 mt-10 text-center">© 2026 TelukAru.id | <a href="/tentang.html">Tentang</a> • <a href="/kontak.html">Kontak</a> • admin@telukaru.id</footer>
+</body>
+</html>
